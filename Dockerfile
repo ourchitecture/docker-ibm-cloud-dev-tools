@@ -1,4 +1,4 @@
-ARG IMAGE_TAG
+ARG IMAGE_TAG="0.12.1"
 
 FROM ibmcom/ibm-cloud-developer-tools-amd64:${IMAGE_TAG}
 
