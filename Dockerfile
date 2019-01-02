@@ -10,7 +10,7 @@ USER root
 
 RUN apk update \
     && ibmcloud config --check-version=false \
-    && apk add --no-cache bash docker \
+    && apk add --no-cache curl bash docker \
     && ibmcloud --version
 
 CMD ["ibmcloud"]
