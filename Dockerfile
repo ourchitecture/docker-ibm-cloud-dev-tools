@@ -9,7 +9,7 @@ LABEL url="https://github.com/ourchitecture/docker-ibmcloud-cli"
 USER root
 
 RUN apk update \
-    && apk add --no-cache curl bash docker nodejs \
+    && apk add --no-cache curl bash docker nodejs nodejs-npm \
     && npm install -g npm@latest \
     && ibmcloud config --check-version=false \
     && ibmcloud --version \
