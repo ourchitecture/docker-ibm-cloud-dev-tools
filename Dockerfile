@@ -15,7 +15,7 @@ RUN apk update \
     && ibmcloud --version \
     && ibmcloud cf --version \
     && docker --version \
-    && kubectl --version \
+    && kubectl version --client \
     && node --version \
     && npm --version
 
