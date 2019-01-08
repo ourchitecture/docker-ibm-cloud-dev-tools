@@ -1,0 +1,11 @@
+{
+    "name": "@ourchitecture/docker-ibm-cloud-dev-tools",
+    "version": "0.0.1",
+    "description": "Docker IBM Cloud Developer Tools",
+    "license": "MIT",
+    "author": "Ourchitecture Open Source",
+    "contributors": [
+        "Eric Swanson @ericis"
+    ],
+    "repository": "https://www.github.com/ourchitecture/docker-ibm-cloud-dev-tools/"
+}
