@@ -1,5 +1,5 @@
-ARG IMAGE_TAG="0.14.0"
-ARG PUPPETEER_VERSION="1.13.0"
+ARG IMAGE_TAG="0.16.0"
+ARG PUPPETEER_VERSION="1.16.0"
 
 FROM ibmcom/ibm-cloud-developer-tools-amd64:${IMAGE_TAG}
 
