@@ -1,5 +1,5 @@
-ARG IMAGE_TAG="0.14.0"
-ARG PUPPETEER_VERSION="1.13.0"
+ARG IMAGE_TAG="0.16.0"
+ARG PUPPETEER_VERSION="1.16.0"
 
 FROM ibmcom/ibm-cloud-developer-tools-amd64:${IMAGE_TAG}
 
@@ -26,7 +26,7 @@ RUN apk update \
     && echo @edge http://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories \
     && echo @edge http://dl-cdn.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories \
     # https://github.com/GoogleChrome/puppeteer/issues/3703#issuecomment-450226060
-    && apk add --no-cache chromium@edge harfbuzz@edge nss@edge \
+    && apk add --no-cache chromium@edge freetype@edge harfbuzz@edge nss@edge \
     && chmod +x /usr/local/bin/dumb-init \
     && npm install puppeteer@$PUPPETEER_VERSION --global \
     && ibmcloud config --check-version=false \
